@@ -618,11 +618,13 @@ body {
         font-size: 40px;
         -webkit-text-stroke-width: 1px;
         line-height: 10px;
+        text-shadow: rgb(220, 203, 162) 2px 2px;
     }
 
     .content-judul p {
         font-size: 20px;
         -webkit-text-stroke-width: .5px;
+        text-shadow: rgb(225, 208, 167) 1px 1px;
     }
 
     #p {
