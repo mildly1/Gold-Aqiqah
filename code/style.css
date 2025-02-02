@@ -176,6 +176,7 @@ body {
     line-height: 67px;
     -webkit-text-stroke-width: 5px;
     -webkit-text-stroke-color: goldenrod;
+    text-shadow: rgb(220, 203, 162) 6px 6px;
 }
 
 .content-judul p {
@@ -187,6 +188,7 @@ body {
     margin-top: 15px;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: white;
+    text-shadow: rgb(225, 208, 167) 2px 2px;
 }
 
 #p {
@@ -253,7 +255,7 @@ body {
 }
 
 .katalog p {
-    color: goldenrod;
+    color: rgb(244, 204, 104);
     font-weight: 900;
     width: 500px;
     -webkit-text-stroke-width: .3px;
@@ -391,6 +393,128 @@ body {
     border-bottom: solid 5px goldenrod;
 }
 
+#tentang-aqiqah {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.banner-ta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(black, goldenrod, white);
+    width: 100%;
+    height: 400px;
+    color: white;
+    -webkit-text-stroke-width: .8px;
+    -webkit-text-stroke-color: rgb(212, 181, 8);
+}
+
+.banner-ta h1 {
+    font-weight: 900;
+    text-shadow: #4e4d4d 3px 3px;
+}
+
+.box-ta {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 30px 0px;
+    gap: 25px;
+}
+
+.box-ta img {
+    width: 20%;
+    height: 20%;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 17px 17px 10px -7px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 17px 17px 10px -7px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 17px 17px 10px -7px rgba(0, 0, 0, 0.75);
+    transition: ease-in-out .2s;
+}
+
+.box-ta img:hover {
+    box-shadow: 20px 20px 13px -7px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 20px 20px 13px -7px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 20px 20px 13px -7px rgba(0, 0, 0, 0.75);
+    transform: scale(1.03);
+}
+
+.box-t-aqiqah {
+    width: 85%;
+    height: auto;
+    background-color: #000000d4;
+    margin-top: 35px;
+    border-radius: 20px;
+    box-shadow: 15px 15px 15px 1px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 15px 15px 15px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 15px 15px 15px 1px rgba(0, 0, 0, 0.75);
+}
+
+.text-t-aqiqah {
+    margin: 30px 40px;
+    color: #ddd;
+    line-height: 20px;
+}
+
+.text-t-aqiqah h2 {
+    padding: 20px;
+    margin: 10px 0px;
+    color: goldenrod;
+}
+
+.text-t-aqiqah li {
+    margin-left: 22px;
+}
+
+.arab {
+    text-align: end;
+    padding: 20px;
+}
+
+.info-kontak {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    color: rgba(255, 255, 255, 0.767);
+    border: 1px solid goldenrod;
+    background-color: rgba(255, 217, 0, 0.851);
+    position: fixed;
+    bottom: 25px;
+    right: 15px;
+}
+
+.scroll a svg {
+    transition: ease-in-out .2s;
+}
+
+.scroll a {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    text-decoration: none;
+    padding: 3px 15px;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    border: solid 2px white;
+    background-color: goldenrod;
+    transition: ease-in-out .2s;
+}
+
+.banner-ta div :hover {
+    background-color: #ffffff;
+    color: #000000;
+    transform: scale(1.03);
+}
+
 .footer {
     display: flex;
     justify-content: center;
@@ -514,36 +638,70 @@ body {
         width: 90%;
         height: 90%;
     }
+
+    .box-ta img {
+        width: 45%;
+        height: 45%;
+    }
+
     .menu {
         gap: 20px;
     }
+
     .menu img {
         width: 90%;
         height: 90%;
     }
+
     .katalog {
         background-image: url(../foto/WhatsApp\ Image\ 2025-01-12\ at\ 10.17.18_44868f16.jpg);
         height: 350px;
     }
+
     .katalog h1 {
         font-size: 25px;
     }
+
     .katalog p {
         width: auto;
     }
+
     .kontak {
         flex-direction: column;
         gap: 0px;
     }
+
     .box-kontak {
         display: none;
     }
+
     .box-contact {
         display: inline-flex;
     }
+
     .footer {
         flex-direction: column;
         gap: 5px;
+    }
+    .info-kontak {
+        display: flex;
+    }
+    .box-t-aqiqah {
+        width: 95%;
+    }
+    .text-t-aqiqah {
+        margin: 15px;
+    }
+    .text-t-aqiqah h2 {
+        text-align: center;
+    }
+    .banner-ta {
+        height: 300px;
+    }
+    .banner-ta h1 {
+        width: 350px;
+        text-align: center;
+        line-height: 34px;
     }
 }
 
